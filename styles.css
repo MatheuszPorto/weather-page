@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-size: 62.5%;
+  font-family: 'Lato', sans-serif;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+main {
+  background: url(assets/background.jpg) no-repeat center/cover;
+  min-height: 100vw;
+  display: grid;
+  place-content: center;
+}
+
+section {
+  background: url(8562848_25501.jpg);
+  backdrop-filter: blur(1rem);
+  border-radius: 1rem;
+}
+
+.temperature-now {
+  background: url(./assets/bg-temp-now.jpg);
+  width: 48rem;
+  height: 48rem;
+  position: relative;
+  display: grid;
+  grid-template-rows: max-content 1fr max-content;
+}
+
+.temperature-now::before {
+  content: "";
+  width: 17.6rem;
+  height: 17.6rem;
+  background: url(./assets/clouds.svg) no-repeat;
+  display: block;
+  position: absolute;
+  margin-top: -5.6rem;
+  margin-left: -5.6rem;
+}
+
+.location {
+  justify-self: end;
+  padding: 3.3rem 3.2rem;
+  display: flex;
+  align-items: center;
+  gap: .4rem;
+}
+
+.location strong {
+  font-size: 1.4rem;
+  color: #C2BFF4;
+}
+
+.temp {
+  text-align: center;
+  margin: 6rem;
+  color: #FFF;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  gap: .4rem;
+}
+
+.temp .number {
+  font-size: 8.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: .4rem;
+}
+
+.number .maxmin {
+  font-size: 2rem;
+}
+
+.maxmin span {
+  color: #C2BFF4;
+  margin-left: .4rem;
+}
+
+.celsius {
+  font-size: 2.4rem;
+  color: #DAD8F7;
+  margin-top: 1rem;
+}
+
+.statistics {
+  padding: 1.2rem;
+  display: flex;
+  gap: .8rem;
+}
+
+.statistics .stats {
+  flex: 1;
+  padding: 1.2rem 1.6rem;background: rgba(102, 96, 200, 0.6);
+  border-radius: .6rem;
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.stats .info p {
+  font-size: 1.2rem;
+}
+
+.stats .info h5 span {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.stats .info p,
+.stats .info h5 span {
+  color: #DAD8F7;
+}
+
+.stats .info h5 {
+  color: #E7E6FB;
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+
+
