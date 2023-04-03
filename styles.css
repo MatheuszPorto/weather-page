@@ -20,18 +20,18 @@ main {
   min-height: 100vw;
   display: grid;
   place-content: center;
+  gap: 2.4rem;
+  padding: 6.4rem;
 }
 
 section {
-  background: url(8562848_25501.jpg);
+  background: #6D67D0;
   backdrop-filter: blur(1rem);
   border-radius: 1rem;
 }
 
 .temperature-now {
   background: url(./assets/bg-temp-now.jpg);
-  width: 48rem;
-  height: 48rem;
   position: relative;
   display: grid;
   grid-template-rows: max-content 1fr max-content;
@@ -101,7 +101,8 @@ section {
 
 .statistics .stats {
   flex: 1;
-  padding: 1.2rem 1.6rem;background: rgba(102, 96, 200, 0.6);
+  padding: 1.2rem 1.6rem;
+  background: rgba(102, 96, 200, 0.6);
   border-radius: .6rem;
   display: flex;
   align-items: center;
@@ -128,4 +129,55 @@ section {
   font-size: 1.8rem;
 }
 
+/* Air-quality */
+
+.air-quality {
+  font-weight: 700;
+  text-align: center;
+}
+
+h2.title {
+  color: #DAD8F7;
+  font-size: 1.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .8rem;
+  margin-top: 3.2rem;
+}
+
+.air-quality .quality {
+  color: #87EBCD;
+  font-size: 1.8rem;
+  margin-top: 3.2rem;
+}
+
+.air-quality > .number {
+  color: #E7E6FB;
+  font-size: 4rem;
+}
+
+.air-quality .info {
+  display: flex;
+  align-items: center;
+  margin-top: 3.2rem;
+  padding: 0 1.6rem 1.6rem;
+}
+
+.air-quality .info .number {
+  flex: 1;
+}
+
+.air-quality .info .number p {
+  color: #87EBCD;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.air-quality .info .number small {
+  color: #E7E6FB;
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
 
