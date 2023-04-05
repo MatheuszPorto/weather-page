@@ -181,3 +181,32 @@ h2.title {
   text-transform: uppercase;
 }
 
+/* Sun Time */
+
+.sun-chart-wrapper {
+  margin-top: 4rem;
+  height: 11rem;
+}
+
+.sun-chart {
+  --pos-x: 50;
+  margin: auto;
+  width: 21.6rem;
+  height: 21.6rem;
+  position: relative;
+}
+
+.sun-chart::before {
+  content: '';
+  width: 1.2rem;
+  height: 1.2rem;
+  position: absolute;
+  background: #F6C833;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  margin: -0.6rem;
+  transform: rotate(calc(1deg * (((100 - var(--pos-x)) / -100) * 180)
+)) translate(10.6rem);
+}
+
