@@ -262,3 +262,33 @@ time.now {
 .time .sunset {
   right: 0;
 }
+
+/* Week Weather */
+
+.week-weather {
+  padding: 4rem;
+  font-weight: 700;
+  display: flex;
+  gap: 1.2rem;
+}
+
+.day {
+  display: grid;
+  flex: 1;
+  justify-items: center;
+  gap: 1.6rem;
+}
+
+h4.title {
+  font-size: 1.4rem;
+  color: #DAD8F7;
+}
+
+.day .maxmin {
+  color: #FFF;
+  font-size: 1.6rem;
+}
+
+.day .maxmin span {
+  color: #C2BFF4;
+}
